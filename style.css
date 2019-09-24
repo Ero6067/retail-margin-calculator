@@ -6,11 +6,15 @@
 	margin-top: 10px;
 }
 
-.calculator input {
-	width: 100px;
+.container {
+	width: 50%;
+}
+.container input {
 	margin: 0 auto;
 }
-
+.app-w {
+	width: 150px;
+}
 body {
 	background: black;
 }
