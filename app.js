@@ -1,20 +1,42 @@
+/**
+ * @name Retail Calculator Controller
+ *
+ * @copyright (C) 2019 Kris Lafrance.
+ * @author Kris Lafrance
+ *
+ */
 "use strict";
+
+const formBody = document.querySelector(".card-body");
+const buyAmount = document.getElementById("itemCost");
+const sellAmount = document.getElementById("retailPrice");
+
 document
 	.getElementById("calculate-form")
 	.addEventListener("submit", function(e) {
-		console.log("test");
+		clearAll();
 		retailPrice();
 		e.preventDefault();
 	});
 
 let retailPrice = () => {
-	const buyAmount = document.getElementById("itemCost");
-	const sellAmount = document.getElementById("retailPrice");
 	const value = parseFloat(buyAmount.value);
-	console.log(value);
 	sellAmount.value = calculatePrice(value);
-};
 
+	if (sellAmount.value === "Error") {
+		sellAmount.style.background = "red";
+		console.log("Error");
+	}
+	if (sellAmount.value === "Ask Management") {
+		sellAmount.style.background = "yellow";
+		sellAmount.style.color = "black";
+	}
+};
+function clearAll() {
+	sellAmount.style.background = "white";
+	sellAmount.style.color = "black";
+	sellAmount.value = "";
+}
 // Calculation and rounding
 let calculatePrice = price => {
 	let num = Math.ceil((price * 2) / 5) * 5;
@@ -34,5 +56,7 @@ let calculatePrice = price => {
 		return num - 30.01;
 	} else if (num > 205) {
 		return "Ask Management";
+	} else {
+		return "Error";
 	}
 };

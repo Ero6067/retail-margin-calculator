@@ -1,7 +1,14 @@
 .display-3 {
 	color: #fff;
 }
-
+.app-card {
+	padding: 25px 0px;
+	background: rgba(0, 0, 0, 0.7);
+}
+.app-form {
+	width: 70%;
+	margin: 0 auto;
+}
 .price-detail {
 	margin-top: 10px;
 }
@@ -16,5 +23,6 @@
 	width: 150px;
 }
 body {
-	background: black;
+	background: url(img/retail-bg.jpg);
+	background-position: center;
 }
