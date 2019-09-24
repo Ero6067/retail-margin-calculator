@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-		<title>Rain City Games Price Calculator</title>
+		<title>Retail Games Price Calculator</title>
 		<link
 			rel="stylesheet"
 			href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -12,8 +12,6 @@
 			crossorigin="anonymous"
 		/>
 		<link rel="stylesheet" href="style.css" />
-
-		<link rel="stylesheet" href="app.js" />
 	</head>
 	<body>
 		<header>
@@ -21,7 +19,7 @@
 			<div class="container"></div>
 		</header>
 
-		<div class="container">
+		<div class="container calculator">
 			<div class="card text-center">
 				<div class="card-header">
 					Retail Calculator
@@ -30,12 +28,13 @@
 					<div class="content">
 						<form>
 							<div class="form-group">
-								<label for="cost">Cost</label>
+								<label for="cost" id="cost">Cost</label>
+								<input class="form-control" id="itemCost" placeholder="Cost" />
 								<input
-									type="text"
 									class="form-control"
-									id="cost"
-									placeholder="Cost"
+									id="retailPrice"
+									placeholder="Retail"
+									disabled
 								/>
 							</div>
 						</form>
@@ -78,5 +77,6 @@
 			integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
 			crossorigin="anonymous"
 		></script>
+		<script src="app.js"></script>
 	</body>
 </html>

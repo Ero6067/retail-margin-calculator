@@ -1,8 +1,16 @@
+.display-3 {
+	color: #fff;
+}
+
 .price-detail {
 	margin-top: 10px;
 }
 
-#cost {
+.calculator input {
 	width: 100px;
 	margin: 0 auto;
+}
+
+body {
+	background: black;
 }
