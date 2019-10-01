@@ -29,7 +29,15 @@
 		<div class="container">
 			<div class="card app-card">
 				<!-- Calculator Form -->
-				<div class="app-form card text-center ">
+				<div class="app-form card text-center">
+					<!-- <ul class="nav nav-tabs">
+						<li class="nav-item">
+							<a class="nav-link active" href="#">Calculator</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Notes</a>
+						</li>
+					</ul> -->
 					<div class="card-body">
 						<div class="content">
 							<form id="calculate-form">
@@ -63,66 +71,66 @@
 				</div>
 				<!-- Notes -->
 				<div class="card text-center price-detail app-form border-0">
-					<div class="notes-form card-header bg-secondary text-white">
-						Notes
-					</div>
-					<div class="card-body ">
-						<div class="content ">
-							<div class="row">
-								<div class="col-9 bg-light border-bottom">
-									If the rounded result is:
-								</div>
-								<div class="col-3 border-bottom border-left bg-light">
-									Decrease
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-9 ">Between $20-$25</div>
-								<div class="col-1  border-left">$</div>
-								<div class="col-2 ">0</div>
-							</div>
-							<div class="row">
-								<div class="col-9 ">Between $30-$55</div>
-								<div class="col-1 border-left">$</div>
-								<div class="col-2 ">5</div>
-							</div>
-							<div class="row">
-								<div class="col-9 ">Between $60-$100</div>
-								<div class="col-1 border-left">$</div>
-								<div class="col-2 ">10</div>
-							</div>
-							<div class="row">
-								<div class="col-9 ">Between $105-$125</div>
-								<div class="col-1 border-left">$</div>
-								<div class="col-2">15</div>
-							</div>
-							<div class="row">
-								<div class="col-9 ">Between $130-$150</div>
-								<div class="col-1 border-left">$</div>
-								<div class="col-2">20</div>
-							</div>
-							<div class="row">
-								<div class="col-9 ">Between $155-$175</div>
-								<div class="col-1 border-left">$</div>
-								<div class="col-2">25</div>
-							</div>
-							<div class="row">
-								<div class="col-9 ">Between $180-$205</div>
-								<div class="col-1 border-left">$</div>
-								<div class="col-2">30</div>
-							</div>
-							<div class="row">
-								<div class="col-9 ">Above $205</div>
-								<div class="col-3 border-left">ASK</div>
-							</div>
-						</div>
-					</div>
+					<table class="table">
+						<thead class="thead-dark">
+							<tr>
+								<th scope="col">Min</th>
+								<th scope="col">Max</th>
+								<th scope="col">Decrease</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>20</td>
+								<td>25</td>
+								<th>0</th>
+							</tr>
+							<tr>
+								<td>30</td>
+								<td>55</td>
+								<th>5</th>
+							</tr>
+							<tr>
+								<td>60</td>
+								<td>100</td>
+								<th>10</th>
+							</tr>
+							<tr>
+								<td>105</td>
+								<td>125</td>
+								<th>15</th>
+							</tr>
+							<tr>
+								<td>130</td>
+								<td>150</td>
+								<th>20</th>
+							</tr>
+							<tr>
+								<td>155</td>
+								<td>175</td>
+								<th>25</th>
+							</tr>
+							<tr>
+								<td>180</td>
+								<td>205</td>
+								<th>30</th>
+							</tr>
+							<tr>
+								<td>$205</td>
+								<td>$999</td>
+								<th>ASK</th>
+							</tr>
+						</tbody>
+					</table>
 				</div>
 			</div>
 		</div>
-		<footer class="footer mt-auto py-3 bg-dark fixed-bottom">
+		<footer class="footer py-2 bg-dark">
 			<div class="container text-center">
-				<span class="text-white-50">Footer Content</span>
+				<span class="text-white-50"
+					>Kris Lafrance <br />
+					&copy; Copyright <span id="year"></span>
+				</span>
 			</div>
 		</footer>
 
