@@ -30,14 +30,6 @@
 			<div class="card app-card">
 				<!-- Calculator Form -->
 				<div class="app-form card text-center">
-					<!-- <ul class="nav nav-tabs">
-						<li class="nav-item">
-							<a class="nav-link active" href="#">Calculator</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Notes</a>
-						</li>
-					</ul> -->
 					<div class="card-body">
 						<div class="content">
 							<form id="calculate-form">
@@ -48,7 +40,7 @@
 										id="itemCost"
 										placeholder="$"
 									/>
-									<div class="form-group" id="calculate-btn">
+									<div class="form-group responsive-width" id="calculate-btn">
 										<input
 											type="submit"
 											value="Calculate"
@@ -70,59 +62,62 @@
 					</div>
 				</div>
 				<!-- Notes -->
-				<div class="card text-center price-detail app-form border-0">
-					<table class="table">
-						<thead class="thead-dark">
-							<tr>
-								<th scope="col">Min</th>
-								<th scope="col">Max</th>
-								<th scope="col">Decrease</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>20</td>
-								<td>25</td>
-								<th>0</th>
-							</tr>
-							<tr>
-								<td>30</td>
-								<td>55</td>
-								<th>5</th>
-							</tr>
-							<tr>
-								<td>60</td>
-								<td>100</td>
-								<th>10</th>
-							</tr>
-							<tr>
-								<td>105</td>
-								<td>125</td>
-								<th>15</th>
-							</tr>
-							<tr>
-								<td>130</td>
-								<td>150</td>
-								<th>20</th>
-							</tr>
-							<tr>
-								<td>155</td>
-								<td>175</td>
-								<th>25</th>
-							</tr>
-							<tr>
-								<td>180</td>
-								<td>205</td>
-								<th>30</th>
-							</tr>
-							<tr>
-								<td>$205</td>
-								<td>$999</td>
-								<th>ASK</th>
-							</tr>
-						</tbody>
-					</table>
-				</div>
+				<table class="table text-center price-detail app-form">
+					<thead class="thead-dark">
+						<tr>
+							<th colspan="3">
+								Rounded Results Modifiers
+							</th>
+						</tr>
+						<tr>
+							<th scope="col">Min</th>
+							<th scope="col">Max</th>
+							<th scope="col">Decrease</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>20</td>
+							<td>25</td>
+							<th>0</th>
+						</tr>
+						<tr>
+							<td>30</td>
+							<td>55</td>
+							<th>5</th>
+						</tr>
+						<tr>
+							<td>60</td>
+							<td>100</td>
+							<th>10</th>
+						</tr>
+						<tr>
+							<td>105</td>
+							<td>125</td>
+							<th>15</th>
+						</tr>
+						<tr>
+							<td>130</td>
+							<td>150</td>
+							<th>20</th>
+						</tr>
+						<tr>
+							<td>155</td>
+							<td>175</td>
+							<th>25</th>
+						</tr>
+						<tr>
+							<td>180</td>
+							<td>205</td>
+							<th>30</th>
+						</tr>
+						<tr>
+							<td>$205</td>
+							<td>$999</td>
+							<th>ASK</th>
+						</tr>
+					</tbody>
+				</table>
 			</div>
 		</div>
 		<footer class="footer py-2 bg-dark">

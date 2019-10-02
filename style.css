@@ -1,20 +1,20 @@
+header {
+	margin: 0% 3%;
+}
+
 .display-3 {
 	color: #fff;
 }
 .app-card {
-	padding: 25px 0px;
+	padding: 5% 0px;
 	background: rgba(0, 0, 0, 0.7);
 }
 .app-form {
-	width: 70%;
+	width: 90%;
 	margin: 0 auto;
 }
 .price-detail {
 	margin-top: 10px;
-}
-
-.container {
-	width: 50%;
 }
 .container input {
 	margin: 0 auto;
@@ -23,7 +23,7 @@
 	width: 40%;
 }
 body {
-	background: url(img/retail-bg.jpg);
+	background: url(img/background.jpg);
 	background-position: center;
 }
 #calculate-btn {
@@ -33,4 +33,51 @@ body {
 footer {
 	bottom: 0;
 	width: 100%;
+	margin-top: 5%;
 }
+
+#calculate-btn {
+	width: 100%;
+}
+
+tr:nth-child(even) {
+	background: #e8e8e8;
+}
+tr:nth-child(odd) {
+	background: #fff;
+}
+
+.responsive-width {
+	font-size: 0.8vw;
+}
+
+/* Mobile */
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (min-width: 320px) {
+	.container {
+		width: 85%;
+	}
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+	.container {
+		width: 65%;
+	}
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+	.container {
+		width: 40%;
+	}
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
+/* Smartphones (portrait) -----------
+@media (min-width: 600px) {
+	
+} */

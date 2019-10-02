@@ -39,9 +39,11 @@ function clearAll() {
 }
 // Calculation and rounding
 let calculatePrice = price => {
-	let num = Math.ceil((price * 2) / 5) * 5;
+	//let num = Math.ceil((price * 2) / 5) * 5;
+	let num = Math.round((price * 2) / 5) * 5 - 0.01;
+	console.log(num);
 	if (num <= 25) {
-		return num - 0.01;
+		return num;
 	} else if (num >= 30 && num <= 55) {
 		return num - 5.01;
 	} else if (num >= 60 && num <= 100) {
