@@ -69,6 +69,17 @@ tr:nth-child(odd) {
 	}
 }
 
+.app-form.card {
+	color: hsl(0, 0%, 100%);
+	background-color: hsl(210, 10%, 23%);
+	border-color: hsl(210, 10%, 30%);
+}
+
+.display-3 {
+	color: hsl(0, 0%, 100%);
+	font-size: 3rem;
+}
+
 /* Medium devices (tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
 	.container {
