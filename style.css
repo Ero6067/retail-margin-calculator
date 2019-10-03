@@ -58,6 +58,15 @@ tr:nth-child(odd) {
 	.container {
 		width: 85%;
 	}
+	.app-form {
+		width: 84%;
+	}
+	.app-card {
+		padding: 8% 0px;
+	}
+	.price-detail {
+		margin-top: 8%;
+	}
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -71,6 +80,15 @@ tr:nth-child(odd) {
 @media (min-width: 992px) {
 	.container {
 		width: 40%;
+	}
+	.app-form {
+		width: 90%;
+	}
+	.app-card {
+		padding: 5% 0px;
+	}
+	.price-detail {
+		margin-top: 5%;
 	}
 }
 
