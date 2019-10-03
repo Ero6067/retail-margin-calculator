@@ -43,9 +43,9 @@ let calculatePrice = price => {
 	let num = Math.round((price * 2) / 5) * 5 - 0.01;
 	console.log(num);
 	if (num <= 25) {
-		return (num - 5).toFixed(2);
-	} else if (num >= 29.99 && num <= 55) {
 		return num.toFixed(2);
+	} else if (num >= 29.99 && num <= 55) {
+		return (num - 5).toFixed(2);
 	} else if (num >= 29.99 && num <= 55) {
 		return (num - 5).toFixed(2);
 	} else if (num >= 59.99 && num <= 100) {
