@@ -11,6 +11,8 @@ Uses HTML5, Javascript, Bootstrap
 - DOM manipulation with Javascript
 - used by a retail store in Vanouver BC, Canada
 
+![calculator-screenshot](/img/screenshot.JPG)
+
 # Run
 
 - `git clone https://github.com/Ero6067/retail-margin-calculator.git`
