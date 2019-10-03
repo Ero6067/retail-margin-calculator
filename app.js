@@ -43,19 +43,21 @@ let calculatePrice = price => {
 	let num = Math.round((price * 2) / 5) * 5 - 0.01;
 	console.log(num);
 	if (num <= 25) {
-		return num;
+		return (num - 5).toFixed(2);
 	} else if (num >= 29.99 && num <= 55) {
 		return num.toFixed(2);
+	} else if (num >= 29.99 && num <= 55) {
+		return (num - 5).toFixed(2);
 	} else if (num >= 59.99 && num <= 100) {
-		return num.toFixed(2) - 10;
+		return (num - 10).toFixed(2);
 	} else if (num >= 104.99 && num <= 125) {
-		return num.toFixed(2) - 15;
+		return (num - 15).toFixed(2);
 	} else if (num >= 129.99 && num <= 150) {
-		return num.toFixed(2) - 20;
+		return (num - 20).toFixed(2);
 	} else if (num >= 154.99 && num <= 175) {
-		return num.toFixed(2) - 25;
+		return (num - 25).toFixed(2);
 	} else if (num >= 179.99 && num <= 205) {
-		return num.toFixed(2) - 30;
+		return (num - 30).toFixed(2);
 	} else if (num > 201.99) {
 		return "Ask Management";
 	} else {
