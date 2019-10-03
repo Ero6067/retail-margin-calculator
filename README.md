@@ -1,4 +1,4 @@
-# Retail Margin Calcultor
+# Retail Margin Calculator
 
 Written by Kris Lafrance
 
