@@ -11,7 +11,7 @@ Uses HTML5, Javascript, Bootstrap
 - DOM manipulation with Javascript
 - used by a retail store in Vanouver BC, Canada
 
-![calculator-screenshot](/img/retail-bg.JPG)
+![calculator-screenshot](/img/retail-bg.jpg)
 
 # Run
 
