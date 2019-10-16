@@ -44,21 +44,19 @@ let calculatePrice = price => {
 	console.log(num);
 	if (num <= 25) {
 		return num.toFixed(2);
-	} else if (num >= 29.99 && num <= 55) {
+	} else if (num >= 30 && num <= 55) {
 		return (num - 5).toFixed(2);
-	} else if (num >= 29.99 && num <= 55) {
-		return (num - 5).toFixed(2);
-	} else if (num >= 59.99 && num <= 100) {
+	} else if (num >= 60 && num <= 100) {
 		return (num - 10).toFixed(2);
-	} else if (num >= 104.99 && num <= 125) {
+	} else if (num >= 105 && num <= 125) {
 		return (num - 15).toFixed(2);
-	} else if (num >= 129.99 && num <= 150) {
+	} else if (num >= 130 && num <= 150) {
 		return (num - 20).toFixed(2);
-	} else if (num >= 154.99 && num <= 175) {
+	} else if (num >= 155 && num <= 175) {
 		return (num - 25).toFixed(2);
-	} else if (num >= 179.99 && num <= 205) {
+	} else if (num >= 180 && num <= 205) {
 		return (num - 30).toFixed(2);
-	} else if (num > 201.99) {
+	} else if (num > 205.01) {
 		return "Ask Management";
 	} else {
 		return "Error";
