@@ -42,7 +42,7 @@ let calculatePrice = price => {
 	//let num = Math.ceil((price * 2) / 5) * 5;
 	let num = Math.round((price * 2) / 5) * 5 - 0.01;
 	console.log(num);
-	if (num <= 25) {
+	if (num <= 29.99) {
 		return num.toFixed(2);
 	} else if (num >= 30 && num <= 55) {
 		return (num - 5).toFixed(2);
