@@ -44,7 +44,7 @@ let calculatePrice = price => {
 	console.log(num);
 	if (num <= 29.99) {
 		return num.toFixed(2);
-	} else if (num >= 30 && num <= 55) {
+	} else if (num >= 30 && num <= 59.99) {
 		return (num - 5).toFixed(2);
 	} else if (num >= 60 && num <= 100) {
 		return (num - 10).toFixed(2);
