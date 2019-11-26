@@ -1,3 +1,16 @@
+html,
+body {
+	height: 100%;
+}
+body {
+	display: flex;
+	flex-direction: column;
+}
+
+.container {
+	flex: 1 0 auto;
+}
+
 header {
 	margin: 0% 3%;
 }
@@ -31,8 +44,7 @@ body {
 }
 
 footer {
-	bottom: 0;
-	width: 100%;
+	flex-shrink: 0;
 	margin-top: 5%;
 }
 
@@ -90,7 +102,7 @@ tr:nth-child(odd) {
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
 	.container {
-		width: 40%;
+		width: 50%;
 	}
 	.app-form {
 		width: 90%;
