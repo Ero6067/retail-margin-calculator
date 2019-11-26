@@ -28,12 +28,17 @@
 		</header>
 		<div class="container">
 			<div class="card app-card">
-				<!-- Nav Links
-				<ul class="nav nav-tabs">
-					<li><a data-toggle="tab" href="#margin">Margin</a></li>
-					<li class="active"><a data-toggle="tab" href="#staff">Staff</a></li>
-					<li><a data-toggle="tab" href="#mtg">MTG</a></li>
-				</ul> -->
+				<!-- Nav Links -->
+				<ul id="navigation" class="nav nav-tabs nav-fill">
+					<li class="nav-item">
+						<a class="nav-link active" data-toggle="tab" href="#margin"
+							>Margin</a
+						>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" data-toggle="tab" href="#staff">Staff</a>
+					</li>
+				</ul>
 
 				<div class="tab-content">
 					<div id="margin" class="tab-pane active">
@@ -137,12 +142,12 @@
 						<div class="app-form card text-center">
 							<div class="card-body ">
 								<div class="content">
-									<form id="calculate-form">
+									<form id="staff-calculate-form">
 										<div class="form-group">
 											<label for="cost" id="cost">Item Cost</label>
 											<input
 												class="form-control app-w text-center"
-												id="itemCost"
+												id="staffItemCost"
 												placeholder="$"
 											/>
 											<div
@@ -160,7 +165,7 @@
 											<label for="cost" id="retail">Staff Price</label>
 											<input
 												class="form-control app-w text-center"
-												id="retailPrice"
+												id="staffPrice"
 												placeholder="$"
 												disabled
 											/>
@@ -198,7 +203,7 @@
 			integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
 			crossorigin="anonymous"
 		></script>
-		<script src="app.js"></script>
-		<script src="staff.js"></script>
+		<script src="js/app.js"></script>
+		<script src="js/staff.js"></script>
 	</body>
 </html>

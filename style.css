@@ -6,15 +6,17 @@ body {
 	display: flex;
 	flex-direction: column;
 }
+header {
+	margin: 0% 3%;
+}
 
 .container {
 	flex: 1 0 auto;
 }
 
-header {
-	margin: 0% 3%;
+#navigation {
+	margin: 0% 5%;
 }
-
 .display-3 {
 	color: #fff;
 }

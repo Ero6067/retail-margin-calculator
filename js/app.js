@@ -7,7 +7,7 @@
  */
 "use strict";
 
-const formBody = document.querySelector(".card-body");
+//const formBody = document.querySelector(".card-body");
 const buyAmount = document.getElementById("itemCost");
 const sellAmount = document.getElementById("retailPrice");
 
